@@ -2,13 +2,27 @@
     box-sizing: border-box;
 }
 .link {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    text-decoration: solid;
+}
+.heading {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+.film-heading {
+    font-style: italic; 
+}
+.text {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
 }
 .header {
     height: 300px;
-    background-color: rgb(48, 17, 77);
-    background-position: center;
+    background-image: url(./images/photo_2_2023-05-28_23-41-48.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -37,20 +51,25 @@
     justify-content: space-around;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url(./images/main-background.jpg);
+    background-image: url(./images/photo_6_2023-05-28_23-41-48.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.main-films {
+    flex-direction: column;
 }
 .main-header {
     display: none;
 }
 .card {
-    flex-basis: 25%;
     height: 400px;
     padding: 30px;
     border-radius: 30px;
     border: 1px solid gray;
     box-shadow: 2px 2px 5px rgb(31, 31, 31); 
-    background-color: #fff;
+    background-color: #c58c57;
     overflow: hidden;
+    margin: 20px;
 }
 .card-title {
     text-align: center;
@@ -58,6 +77,31 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
-.skill-list {
-
+.home-card {
+    flex-basis: 25%;
+}
+.biography-card {
+    height: 450px;
+    width: 800px;
+}
+.film-card {
+    height: 650px;
+    padding-left: 40px;
+}
+.film-list {
+    list-style-type: circle;
+}
+.film-img {
+    width: 300px;
+    height: 500px;
+    float: left;
+}
+.film-desc {
+    padding: 30px;
+    font-size: 20px;
+}
+.film-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
