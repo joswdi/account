@@ -45,6 +45,10 @@
 }
 .nav-link {
     color: burlywood;
+    transition: color 1000ms cubic-bezier(.17, .67, .83, .67);
+}
+.nav-link:hover {
+    color: #e98120;
 }
 .main {
     display: flex;
